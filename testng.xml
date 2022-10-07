@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Panvel-App">
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener" />
+    </listeners>
+
+    <test thread-count="1" name="LoginTest">
+        <classes>
+            <class name="testCases.login.LoginTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test thread-count="1" name="OrderTest">
+        <classes>
+            <class name="testCases.order.OrderByPaymentsTest"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->
